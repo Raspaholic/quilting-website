@@ -10,6 +10,10 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="/CSS/style.css" />
     <title>Sew Blessed Stitchery</title>
     <script
@@ -19,56 +23,49 @@
     ></script>
   </head>
   <body>
-    <section id="intro">
+    <header>
       <!-- Navbar -->
-      <div class="w-auto ps-3 pt-2">
-        <nav class="navbar navbar-nav navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="#" class="navbar-brand mx-auto">
-              <div class="row">
-                <div class="col-sm-3">
-                  <img
-                    src="/Img/hummingbird-removebg-preview.png"
-                    alt="Logo"
-                    style="width: 40px"
-                  />
-                </div>
-                <div class="col-sm-3">
-                  <h3>Sew Blessed Stitchery</h3>
-                </div>
-              </div>
-            </a>
-            <div class="collapse navbar-collapse" id="collNavbar">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Table Runners</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Blankets</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Quilts</a>
-                </li>
-              </ul>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <span><i class="bi bi-person"></i></span>
-              </div>
-              <div class="col-6"></div>
-            </div>
+      <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 head">
+        <div class="container-fluid">
+          <a href="/index.html" class="navbar-brand">
+            <img
+              src="/Img/hummingbird-removebg-preview.png"
+              alt="Logo"
+              class="d-inline-block"
+            />
+            <span class="ps-3">Sew Blessed Stitchery</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleHamburger"
+            aria-controls="toggleHamburger"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="toggleHamburger">
+            <ul class="navbar-nav ms-auto text-end pe-3">
+              <li class="nav-item">
+                <a
+                  href="/index.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/HTML/about.html" class="nav-link disabled">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled">Contact</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
-      <div class="container pt-3"></div>
-    </section>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>

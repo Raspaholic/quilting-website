@@ -1,3 +1,10 @@
-#intro {
+body {
   background-color: #d3e4cd;
+}
+header {
+  background-color: #99a799;
+}
+a.navbar-brand img {
+  width: 40px;
+  height: 30px;
 }
